@@ -21,8 +21,7 @@ app.add_middleware(
 )
 
 # Charger le modèle
-model = joblib.load("/app/models/final_randomforest.pkl")
-
+model = joblib.load("models/final_randomforest.pkl")
 # Définir le format des données reçues
 class Passenger(BaseModel):
     Pclass: int
